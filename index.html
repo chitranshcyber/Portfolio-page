@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="hero" style="background: url('hero-image.jpg') no-repeat center center/cover; color: #fff; text-align: center; padding: 100px 20px;">
+  <h2>Hi, I'm Chitransh Sharma</h2>
+  <p style="color: #FFD700;">A passionate web developer creating beautiful and functional websites.</p>
+  <a href="#contact" class="cta-btn">Get in Touch</a>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! My name is Chitransh Sharma and I am a web developer passionate about creating beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>A Simple Quiz app.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Dynamic website design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>"Chitransh is an amazing web developer! His attention to detail is unmatched."</p>
+        <h4>- Client A</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Great working with Chitransh. He brought our vision to life beautifully!"</p>
+        <h4>- Client B</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:chitranshsharma764@gmail.com">chitranshsharma764@gmail.com</a></p>
+      <p>Phone: <a href="tel:+8174051020">8174051020</a></p>
+      <p>
+        Follow me on: 
+        <a href="https://www.instagram.com/chitrans.shk" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> | 
+        <a href="https://www.facebook.com/chitranshsharma" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio (Chitransh Sharma)</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/chitrans.shk" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/chitranshsharma" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-to-top" style="position: fixed; bottom: 20px; right: 20px; display: none; padding: 10px 15px; background: #007acc; color: #fff; border: none; border-radius: 5px; cursor: pointer;">↑</button>
+
+  <script>
+    // Show/hide scroll-to-top button
+    const scrollBtn = document.getElementById('scroll-to-top');
+    window.onscroll = function () {
+      if (window.scrollY > 200) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    };
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
